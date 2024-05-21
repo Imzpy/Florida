@@ -150,7 +150,7 @@ jobs:
           real=$(realpath $path)
           echo "Apply patches in $real to frida/$name"
           cd $name
-          git am ../../patches/$name/*.patch
+          git am ../../../patches/$name/*.patch
           cd ..
           echo $i
         done
